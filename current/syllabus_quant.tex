@@ -1,0 +1,133 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin = 2cm]{geometry}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\definecolor{dark_blue}{rgb}{0.2, 0.0, .7}
+\usepackage[colorlinks = TRUE,
+			allcolors = dark_blue]{hyperref}
+
+\usepackage{setspace}
+\setstretch{1.25}
+\renewcommand*\rmdefault{ppl}
+
+
+\usepackage[]{titlesec}
+    \titleformat*{\section}{\large\bf}
+    \titleformat*{\subsection}{\normalsize\bf}
+    \titleformat*{\subsubsection}{\normalsize\it}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+{\Large\bf Applied Quantitative Methods for the Social Sciences II}\\\vspace{10pt}
+Master in Social Sciences\\Carlos III-Juan March Institute\\
+%\\Universidad Carlos III de Madrid\\
+\vspace{10pt}
+{\large Spring 2026}\\
+\end{center}
+
+\vspace{15pt}
+
+\begin{minipage}{0.6\textwidth}
+\textbf{Francisco Villamil}\\
+Email: \href{francisco.villamil@uc3m.es}{francisco.villamil@uc3m.es}\\
+Office: 18.2.A34 (by appointment)
+\end{minipage}\hfill
+\begin{minipage}{0.39\textwidth}
+\centering
+\textbf{Time and place:}\\
+Thursdays, 10h--13h\\Room TBC
+\end{minipage}
+
+
+\section*{}
+
+\textbf{Note (July 2025):} This syllabus is preliminary and will be updated \& extended throughout the next few months. The schedule can also be adapted depending on our progress.
+
+% \vspace{10pt}
+\section{Description}
+
+This is a graduate-level course on quantitative methods applied to Social Sciences. It builds on the contents of the previous course, AQMSS-I. In this course we will apply the statistical tools learned in the previous course and use them to analyze a variety of datasets, focusing on different questions. Our focus will be on how to aplly quantitative methods in practice: learning what methods should be used in each case, what strategies we can use to answer each question, how to interpret and visualize model results, and how to evaluate them.
+
+We will also focus intensively on the use of the statistical program R, both for model estimation and data cleaning and transformation. The goal of this course is to prepare students to go from research question to answer, which involves thinking about research design, collecting or finding data, cleaning and preparing it, estimating models, and presenting and interpreting results.
+
+The course will consist of a mixture of brief lectures and practical computer lab sessions. In the lecture we will cover basic concepts and ideas, and we will discuss assigned readings. These readings will be published papers which we will `reverse engineer' and think about how to extend or improve them. In the lab sessions, we will go through replication material of published papers and solve problem sets.
+
+\newpage\section{Requirements and grading}
+
+The grade will consist mainly of three components: 1) problem sets, 2) a final project, and 3) an exam. The different activities and how they contribute to the final grade are as follows:
+
+\begin{itemize}
+\setlength\itemsep{-5pt}
+  \item \textbf{Problem sets (20\%)}: We will start problem sets in class, but students have to finish them at home and submit them by a given short deadline. Evaluation will be based on successful submission of problems sets on time.
+  \item \textbf{Proposal presentation and peer review (10\% + 10\%):} Halfway through the course, you will present your idea for the final essay in class. Each student will be paired with another student, and will discuss his idea and provide feedback. More details will be discussed in class.
+  \item \textbf{Final essay (30\%):} The final essay consists of a small research note (max 3,000 words) incorporating an original data analysis using R. You are free to choose any topic and/or data source (it can overlap with your other substantive courses). More details will be discussed in class.
+  \item \textbf{Exam (30\%):} Final exam focusing on both theoretical and practical issues.
+\end{itemize}
+
+\section{AI policy}
+
+In this course, students should not use artificial intelligence tools to carry out the work or exercises proposed by the faculty. In the event that the use of AI by the student gives rise to academic fraud by falsifying the results of an exam or work required to accredit academic performance, the Regulation of the UC3M of partial development of the Law 3/2022, of February 24th, of University Coexistence, will be applied.
+
+\section{Readings}
+
+I will provide a more specific list of readings and textbooks, but we will rely on several textbooks and materials. Many of them are freely available online.
+
+\begin{itemize}
+\setlength\itemsep{-5pt}
+  \item Kosuke Imai, \textit{Quantiative Social Science: An Introduction}, (Princeton UP, 2017).
+  \item Diez, Cetinkaya-Rundel, and Barr, \href{https://www.openintro.org/book/os/}{OpenIntro Statistics} (OpenIntro, 4th ed, 2019).
+  \item Francisco Urdinez and Andres Cruz, \textit{R for Political Data Science: A Practical Guide}, (CRC, 2020).
+  \item Ismay, Kim, and Valdivia, \href{https://moderndive.com/}{Statistical Inference via Data Science: A ModernDive into R and the Tidyverse} (Online/CRC, 2025).
+\end{itemize}
+
+
+Textbooks more focused on the use of R are:
+
+\begin{itemize}
+\setlength\itemsep{-5pt}
+  \item Wickman, Cetinkaya-Rundel, and Gloremund, \href{https://r4ds.hadley.nz/}{R for Data Science} (Online/O'Reilly, 2nd ed, 2023).
+  \item Arel-Bundock, Greifer, and Heiss, \href{https://marginaleffects.com/chapters/who.html}{Model to Meaning: How to Interpret Statistical Models Using \texttt{marginaleffects} for R and Python} (online, 2025).
+  \item Rodrigues, \href{https://raps-with-r.dev/}{Building reproducible analytical pipelines with R} (online, 2023).
+\end{itemize}
+
+For topics more related to causal analyses (which you will explore more in depth in a later course during the second year of the MA), two reference textbooks are:
+
+\begin{itemize}
+\setlength\itemsep{-5pt}
+  \item Nick Huntington-Klein, \href{https://theeffectbook.net/}{\textit{The Effect: An Introduction to Research Design and Causality}} (Chapman and Hall/CRC, 2021).
+  \item Scott Cunningham, \href{https://mixtape.scunning.com/}{\textit{Causal Inference: The Mixtape}} (Yale University Press, 2021).
+\end{itemize}
+
+% \newpage
+\section{Course outline}
+
+ % \hrule % ============================================================
+
+\begin{table*}[!ht]
+  \centering
+  \setstretch{1.4}
+
+  \begin{tabular}{lll}
+    \textbf{Session 1} & January 29 & Introduction \\
+    \textbf{Session 2} & February 5 & Applied regression (I) \\
+    \textbf{Session 3} & February 12 & Applied regression (II) \\
+    \textbf{Session 4} & February 19 & Model interpretation and diagnostics \\
+    \textbf{Session 5} & February 26 & Best practices in computing \\
+    \textbf{Session 6} & March 5 & Panel data (I) \\
+    \textbf{Session 7} & March 12 & Panel data (II) \\
+    \textbf{Session 8} & March 19 & Spatial data (I) \\
+    \textbf{Session 9} & March 26 & Spatial data (II) \\
+    \textbf{Session 10} & April 9 & Project presentations \\
+    \textbf{Session 11} & April 16 & Other outcomes (nominal, ordinal, count, duration) \\
+    \textbf{Session 12} & April 23 & Advanced (TBC: networks, visualization, etc) \\
+  \end{tabular}
+\end{table*}
+
+% \vspace{20pt}
+% \hrule
+
+\end{document}
